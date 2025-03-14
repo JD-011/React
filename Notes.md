@@ -1,10 +1,14 @@
 # To create any new Project:
 
-npx create-react-app (projectName)
+npx create-react-app (projectName) <br>
 npm run start
 
 # How to create new Project by using vite:
 
-npm create vite@latest
-npm install (~ npm i)
+npm create vite@latest <br>
+npm install (~ npm i) <br>
 npm run dev
+
+# Here is the opensource repo for React:
+
+https://github.com/facebook/react

@@ -40,4 +40,9 @@ createRoot(document.getElementById('root')).render(
   // </StrictMode>,
 
   // MyApp() // this is not a good practice to do but just for the sake that it still works...
+
+  // anotherElement
+
+  // reactElement
+  
 )

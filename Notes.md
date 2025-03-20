@@ -16,3 +16,11 @@ https://github.com/facebook/react
 # Here is the documentation for React-Fiber:
 
 https://github.com/acdlite/react-fiber-architecture
+
+# useCallback in React:
+
+https://react.dev/reference/react/useCallback
+
+# useEffect in React:
+
+https://react.dev/reference/react/useEffect

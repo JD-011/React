@@ -28,3 +28,8 @@ https://react.dev/reference/react/useEffect
 # React Router Official Documentation:
 
 https://reactrouter.com/
+
+# Context API in react:
+
+https://react.dev/reference/react/createContext <br>
+https://react.dev/reference/react/useContext

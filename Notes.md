@@ -33,3 +33,6 @@ https://reactrouter.com/
 
 https://react.dev/reference/react/createContext <br>
 https://react.dev/reference/react/useContext
+
+# Redux Toolkit:
+https://redux-toolkit.js.org/ (you can find Redux & React-Redux at the bottom of the web)

@@ -26,4 +26,8 @@ set VITE_APPWRITE_BUCKET_ID to Bucket ID of our project's storage on AppWrite <b
 => don't forget to update the permissions in the setting of our bucket (here "images") <br>
 
 # Best practices to follow:
-=> create one folder named "conf" in "src" and in that folder create one file named "conf.js", write configuration of our env var there: go through that file for more information...
+=> create one folder named "conf" in "src" and in that folder create one file named "conf.js", write configuration of our env var there: go through that file for more information... <br>
+
+# Documentation link of AppWrite:
+https://appwrite.io/docs/products/auth <br>
+(read it for building authentication services on our project)

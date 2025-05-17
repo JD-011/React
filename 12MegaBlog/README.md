@@ -1,6 +1,7 @@
 # IMP Notes:
 # Install Dependencies:
-npm i @reduxjs/toolkit react-redux react-router-dom appwrite@14.0.1 @tinymce/tinymce-react html-react-parser react-hook-form
+npm i @reduxjs/toolkit react-redux react-router-dom appwrite@14.0.1 @tinymce/tinymce-react html-react-parser react-hook-form tailwindcss @tailwindcss/vite <br>
+=> Configure the Vite plugin & Import Tailwind CSS
 # Setting up environment variables:
 => always create environment variable file (here, ".env" file) in the root of the project(here, root == "12MegaBlog" folder) <br>
 => don't forget the 'dot' in ".env" <br>
@@ -39,3 +40,12 @@ https://appwrite.io/docs/references/cloud/client-web/storage
 # Assignment-1: 
 => separate the databases & storage services from config.js by creating two separate files
 
+# Redux Toolkit Configuration:
+=> first of all create store & slices in a separate folder (here "store"), go threw our redux-toolkit project if you need any help <br>
+=> insert store into "main.jsx" by using 'Provider' <br>
+=> now you can manipulate the store's data in different-different component using 'useSelector' & 'useDispatch'
+
+# Assignment-2:
+=> improve the loading part in "App.jsx" if you want...
+
+# Components:

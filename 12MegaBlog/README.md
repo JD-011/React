@@ -1,7 +1,7 @@
 # IMP Notes:
 # Install Dependencies:
 npm i @reduxjs/toolkit react-redux react-router-dom appwrite@14.0.1 @tinymce/tinymce-react html-react-parser react-hook-form
-# Setting environment variables:
+# Setting up environment variables:
 => always create environment variable file (here, ".env" file) in the root of the project(here, root == "12MegaBlog" folder) <br>
 => don't forget the 'dot' in ".env" <br>
 => add ".env" file to ".gitignore" <br>
@@ -30,4 +30,12 @@ set VITE_APPWRITE_BUCKET_ID to Bucket ID of our project's storage on AppWrite <b
 
 # Documentation link of AppWrite:
 https://appwrite.io/docs/products/auth <br>
-(read it for building authentication services on our project)
+(read it for building authentication services of our project) <br>
+https://appwrite.io/docs/references/cloud/client-web/databases <br>
+(read it for building databases services of our project) <br>
+https://appwrite.io/docs/references/cloud/client-web/storage
+(read it for building storage services of our project) <br>
+
+# Assignment-1: 
+=> separate the databases & storage services from config.js by creating two separate files
+

@@ -49,3 +49,5 @@ https://appwrite.io/docs/references/cloud/client-web/storage
 => improve the loading part in "App.jsx" if you want...
 
 # Components:
+=> build every component required by our website <br>
+=> try to build production grade react components <br>

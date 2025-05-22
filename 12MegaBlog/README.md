@@ -1,8 +1,10 @@
-# IMP Notes:
+# Road-map & Guide for our project:
+
 # Install Dependencies:
 npm i @reduxjs/toolkit react-redux react-router-dom appwrite@14.0.1 @tinymce/tinymce-react html-react-parser react-hook-form tailwindcss @tailwindcss/vite <br>
 => Configure the Vite plugin & Import Tailwind CSS
-# Setting up environment variables:
+
+# Setting up environment Variables:
 => always create environment variable file (here, ".env" file) in the root of the project(here, root == "12MegaBlog" folder) <br>
 => don't forget the 'dot' in ".env" <br>
 => add ".env" file to ".gitignore" <br>
@@ -37,10 +39,16 @@ https://appwrite.io/docs/references/cloud/client-web/databases <br>
 https://appwrite.io/docs/references/cloud/client-web/storage
 (read it for building storage services of our project) <br>
 
+# Build Authentication services using AppWrite:
+=> now it's time to build authentication services of our website <br>
+=> maintain a separate folder for all services related to AppWrite (here "appwrite") <br>
+=> try to build all services in a way that if we want to change our service provider or even want to build our own backend then we can easily change from one to another <br>
+=> to do that we can use class based approach to build our different services and export the instance of that class
+
 # Assignment-1: 
 => separate the databases & storage services from config.js by creating two separate files
 
-# Redux Toolkit Configuration:
+# Redux Toolkit configuration:
 => first of all create store & slices in a separate folder (here "store"), go threw our redux-toolkit project if you need any help <br>
 => insert store into "main.jsx" by using 'Provider' <br>
 => now you can manipulate the store's data in different-different component using 'useSelector' & 'useDispatch'
@@ -48,6 +56,14 @@ https://appwrite.io/docs/references/cloud/client-web/storage
 # Assignment-2:
 => improve the loading part in "App.jsx" if you want...
 
-# Components:
-=> build every component required by our website <br>
+# Building Components:
+=> to build every components required by our website we can maintain a separate folder (here "components") in which we will store all of our components <br>
 => try to build production grade react components <br>
+=> one best practice to follow here is to use "index.js" file in our folder so we can easily import our components everywhere we want by just importing and exporting our components in "index.js" file once and then directly importing the "index.js" file <br>
+=> we will use "useForm" from "react-hook-form" & "Editor" from "@tinymce/tinymce-react" to build some of our components <br>
+=> first read documentations of both "react-hook-form" & "@tinymce/tinymce-react" and then start to build the components <br>
+=> here is the links for both documentation: <br>
+React Hook Form: https://react-hook-form.com/docs <br>
+RTE: https://www.tiny.cloud/docs/tinymce/latest/react-cloud/
+
+# Building Pages:

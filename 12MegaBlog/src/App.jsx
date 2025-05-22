@@ -4,6 +4,7 @@ import {useDispatch} from "react-redux";
 import authServices from "./appwrite/auth";
 import {login, logout} from "./store/authSlice";
 import {Header, Footer} from "./components"
+import {Outlet} from "react-router-dom";
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ function App() {
         authServices.getCurrentUser()
             .then((userData) => {
                 if(userData){
-                    dispatch(login({userData}));
+                    dispatch(login(userData));
                 }else{
                     dispatch(logout());
                 }
@@ -26,12 +27,14 @@ function App() {
             <div className={'w-full block'}>
                 <Header />
                 <main>
-                    {/*<Outlet />*/}
+                    <Outlet />
                 </main>
                 <Footer />
             </div>
         </div>
-    ) : null;
+    ) : (
+        <div>Loading</div>
+    );
 }
 
 export default App

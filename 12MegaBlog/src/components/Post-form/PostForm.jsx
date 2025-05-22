@@ -1,7 +1,7 @@
 import React, {useCallback, useEffect} from "react";
 import {useForm} from "react-hook-form";
 import {Button, Input, Select, RTE} from "../index.js"
-import {service} from "../../appwrite/config.js";
+import service from "../../appwrite/config.js";
 import {useNavigate} from "react-router-dom";
 import {useSelector} from "react-redux";
 
@@ -51,7 +51,7 @@ function PostForm({post}) {
             return val
                 .trim()
                 .toLowerCase()
-                .replace(/^[a-zA-Z\d]+/g, '-');
+                .replace(/[^a-zA-Z\d]+/g, '-');
         return '';
     }, []);
 
